@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="styles-minify.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container-steps">
+        <div class="step-1">1</div>
+        <div class="step-2">2</div>
+        <div class="step-3">3</div>
+        <div class="step-4">4</div>
+    </div>
+    <main class="main">
+        <form action="">
+            <fieldset class="fieldset-step-1">
+                <legend></legend>
+                <h1>personal info</h1>
+                <p class="paragraph">please provide your name, email address, and phone number</p>
+                <div class="personal-info-container">
+                    <legend>name</legend>
+                    <input type="text" name="" id="" placeholder="e.g. Stephen King">
+                </div>
+                <div class="personal-info-container">
+                    <legend>email address</legend>
+                    <input type="email" name="" id="" placeholder="e.g. stephenking@lorem.com">
+                </div>
+                <div class="personal-info-container">
+                    <legend>phone number</legend>
+                    <input type="tel" name="" id="" placeholder="e.g. +1 234 567 890">
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-step-2">
+                <h2>select your plan</h2>
+                <p class="paragraph">you have the option of monthly or yearly billing</p>
+                <div>
+                    <button type="button">
+                        <label for="">arcade</label>
+                        <input type="text" name="" id="" disabled value="$9/mo">
+                        <span class="plan-year__months-free">2 months free</span>
+                    </button>
+                    <button type="button">
+                        <label for="">advanced</label>
+                        <input type="text" name="" id="" disabled value="$12/mo">
+                        <span class="plan-year__months-free">2 months free</span>
+                    </button>
+                    <button type="button">
+                        <label for="">pro</label>
+                        <input type="text" name="" id="" disabled value="$15/mo">
+                        <span class="plan-year__months-free">2 months free</span>
+                    </button>
+                </div>
+                <div class="container-range-plan">
+                    <span class="monthly-text">monthly</span>
+                    <input class="input-range-plan" type="range" name="" id="" step="2" max="2">
+                    <span class="yearly-text">yearly</span>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-step-3">
+                <h2>Pick add-ons</h2>
+                <p class="paragraph">add-ons help enhance your gaming experience.</p>
+                <div>
+                    <label>
+                        <img src="assets/images/icon-checkmark.svg" alt="">
+                        <div>
+                            <h3>online service</h3>
+                            <p>access to muliplayer games</p>
+                        </div>
+                        <input type="text" name="" id="" disabled value="+$1/mo">
+                    </label>
+                    <label>
+                        <img src="assets/images/icon-checkmark.svg" alt="">
+                        <div>
+                            <h3>larger storage</h3>
+                            <p>extra 1<span>tb</span> of cloud save</p>
+                        </div>
+                        <input type="text" name="" id="" disabled value="+$2/mo">
+                    </label>
+                    <label>
+                        <img src="assets/images/icon-checkmark.svg" alt="">
+                        <div>
+                            <h3>customizable profile</h3>
+                            <p>custom theme on your profile</p>
+                        </div>
+                        <input type="text" name="" id="" disabled value="+$2/mo">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-step-4">
+                <h2>finishing up</h2>
+                <p class="paragraph">double-check everything looks <span>ok</span> before confirming</p>
+                <div>
+                    <div>
+                        <div>
+                            <h3>arcade (monthly)</h3>
+                            <a href="index.html">Change</a>
+                        </div>
+                        <input type="text" name="" id="" disabled value="$9/mo">
+                    </div>
+                    <div>
+                        <p>online service</p>
+                        <input type="text" name="" id="" disabled value="$1/mo">
+                    </div>
+                    <div>
+                        <p>larger storage</p>
+                        <input type="text" name="" id="" disabled value="+$2/mo">
+                    </div>
+                    <div>
+                        <p>total (per month)</p>
+                        <input type="text" name="" id="" disabled value="+$12/mo">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="container-thankyou">
+            <img src="assets/images/icon-thank-you.svg" alt="">
+            <h2>thank you!</h2>
+            <p>thanks for confirming your subscription</p>
+            <p>we hope you have fun using our platform. If you never need support, please feel free to email us
+                at<br>support@loremgaming.com.</p>
+        </div>
+    </main>
+    <div class="container-buttons">
+        <button type="button" class="button-next">next step</button>
+        <button type="button" class="button-back">go back</button>
+        <button type="button" class="button-confirm">confirm</button>
+    </div>
+</body>
+
+</html>
